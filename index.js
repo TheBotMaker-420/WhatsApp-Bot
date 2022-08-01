@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { Client , LegacySessionAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
+const grp = require('./config.json');
 
 const SESSION_FILE_PATH = './session.json';
 
@@ -22,7 +23,7 @@ client.on('qr', (qr) => {
 client.on('ready', () => {
     console.log('Client is ready!');
     client.getChats().then(chats => {
-        const myGroup = chats.find((chat) => chat.name === 'Test');
+        const myGroup = chats.find((chat) => chat.name === grp.GroupName);
         client.sendMessage(
             myGroup.id._serialized,
             "Hello !! I Am Ready !!"
