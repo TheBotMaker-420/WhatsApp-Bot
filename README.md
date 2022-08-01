@@ -16,7 +16,7 @@
 
 - To Check The Working Of The Code, You Can Go To The Directory And Type `node index.js` In The Console.
 
-- After Running The Code, An OR Code Will Be Printed In The Console. Scan That QR Code From Your Whatsapp.
+- After Running The Code, An QR Code Will Be Printed In The Console. Scan That QR Code From Your Whatsapp.
 
 - Now You Are Good To Go 🚀 !!
 
