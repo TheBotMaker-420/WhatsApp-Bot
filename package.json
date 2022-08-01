@@ -3,12 +3,24 @@
   "version": "1.0.0",
   "description": "A WhatsApp Bot",
   "main": "index.js",
-  "devDependencies": {},
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBotMaker-420/WhatsApp-Bot.git"
   },
   "author": "Anmol Anand",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheBotMaker-420/WhatsApp-Bot/issues"
+  },
+  "homepage": "https://github.com/TheBotMaker-420/WhatsApp-bot#readme",
   "dependencies": {
     "nodemon": "^2.0.19",
     "qrcode-terminal": "^0.12.0",
