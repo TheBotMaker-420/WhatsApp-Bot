@@ -22,4 +22,18 @@ client.on('ready', () => {
     });
 });
 
+client.on('message', async (message) => {
+    const command = message.body.toLowerCase();
+
+	if(command === 'hello') {
+		const chat = await message.getChat();
+    const contact = await message.getContact();
+    
+    await chat.sendMessage(`Hello @${contact.id.user} !!`, {
+        mentions: [contact]
+    });
+
+	}
+});
+
 client.initialize();
